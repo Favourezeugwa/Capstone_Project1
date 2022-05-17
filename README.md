@@ -1,2 +1,2 @@
-# Captone_Project1
+# Capstone_Project1
 HTML/CSS and JavaScript Capstone Project 
