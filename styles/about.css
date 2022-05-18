@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #272a31;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "COCOGOOSE", Georgia, serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+}
+
+#heading {
+  height: 100vh;
+  padding: 90px 10px;
+}
+
+#heading::after {
+  content: "";
+  background-image: url("./images/about-background7480127.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#nav-section {
+  width: 100%;
+  position: relative;
+}
+
+#menu {
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  position: fixed;
+}

@@ -1,1 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #272a31;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "COCOGOOSE", Georgia, serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* header section starts */
+#heading {
+  height: 100vh;
+  padding: 90px 10px;
+}
+
+#heading::after {
+  content: "";
+  background-image: url("../images/headline-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#nav-section {
+  width: 100%;
+  position: relative;
+}
+
+#menu {
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  position: fixed;
+}
+
+.first-header p {
+  color: #ec5242;
+  font-size: 18px;
+}
+
+.first-header h1 {
+  background-image: url("../images/imagesblack-white.jpg");
+  -webkit-background-clip: text;
+  color: #ec5342e3;
+  font-size: 35px;
+  font-family: "cocogoose", serif;
+}
+
+p.description {
+  border: 2px solid #fff;
+  padding: 5px 5px 5px 10px;
+  margin-top: 20px;
+}
+
+.date-address {
+  margin-top: 20px;
+}
+
+header .date-address h2 {
+  font-size: 25px;
+}
+
+/* Ends */
+
+/* Our services section starts */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/ourservices-bg.jpeg");
+  background-repeat: repeat;
+}
+
+.services h3 {
+  margin: 30px 0 0 0;
+  color: #d3d3d3;
+  font-family: "Lato", sans-serif;
+}
+
+.services hr {
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 50px;
+  margin: 10px;
+}
+
+.services h4 {
+  color: #ec5242;
+  font-size: 15px;
+}
+
+.services p {
+  color: #d3d3d3;
+  font-size: 13px;
+}
+
+.services ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20px 10px 0 10px;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.services ul > li {
+  border: 1px solid #333336;
+  background-color: #9e9c9c50;
+  display: grid;
+  grid-template-columns: 15% 25% 60%;
+  padding: 20px 0 10px 10px;
+  align-items: center;
+}
+
+button {
+  color: #d3d3d3;
+  background-color: #ec5242;
+  border: 1px solid #c2665e;
+  font-size: 16px;
+  width: 300px;
+  padding: 20px;
+  margin: 30px 0 30px 0;
+  cursor: pointer;
+}
+
+/* Ends */
+
+/* Meet our specialist section */
+.our-specialist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.our-specialist h3 {
+  margin: 30px 0 0 0;
+  font-family: "Lato", sans-serif;
+}
+
+.our-specialist hr {
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 50px;
+  margin: 10px;
+}
+
+.our-specialist button {
+  color: #272a31;
+  background-color: #fff;
+  border: 1px solid #a5a09f;
+  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.our-specialist button i {
+  color: #ec5242;
+}
+
+/* Ends */
+
+/* Partners section starts */
+.Partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #272a31;
+  color: #d3d3d3;
+}
+
+.Partners-section h3 {
+  margin: 30px 0 0 0;
+  color: #d3d3d3;
+  font-family: "Lato", sans-serif;
+}
+
+.Partners-section hr {
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 50px;
+  margin: 10px;
+}
+
+footer img {
+  width: 60px;
+  height: 40px;
+}
+
+ul > li > img {
+  width: 120px;
+  height: 70px;
+  padding: 15px;
+}
+
+.Partners-section ul {
+  list-style-type: none;
+  gap: 10px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30%;
+}
+
+/* footer section */
+footer {
+  background: #e7e6e6;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
