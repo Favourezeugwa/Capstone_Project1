@@ -26,7 +26,23 @@ a {
   cursor: pointer;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 50px;
+  margin: 10px;
+}
+
 /* header section starts */
+header {
+  background-color: #cabfbee7;
+  padding: 30px;
+  box-shadow: 0 3px 10px 0 #4b4b4b73;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 #heading {
   height: 100vh;
   padding: 90px 10px;
@@ -103,13 +119,6 @@ header .date-address h2 {
   font-family: "Lato", sans-serif;
 }
 
-.services hr {
-  border: none;
-  border-top: 1px solid #ec5242;
-  width: 50px;
-  margin: 10px;
-}
-
 .services h4 {
   color: #ec5242;
   font-size: 15px;
@@ -152,26 +161,41 @@ button {
 /* Ends */
 
 /* Meet our specialist section */
-.our-specialist {
+#our-specialist {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px;
 }
 
-.our-specialist h3 {
+#our-specialist h3 {
   margin: 30px 0 0 0;
   font-family: "Lato", sans-serif;
 }
 
-.our-specialist hr {
-  border: none;
-  border-top: 1px solid #ec5242;
-  width: 50px;
-  margin: 10px;
+.specialist-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 30%;
+  margin-top: 30px;
 }
 
-.our-specialist button {
+.specialist-container p {
+  font-size: 12px;
+}
+
+.specialist-container .role {
+  color: #ec5242;
+}
+
+#our-specialist > div > div > hr {
+  border: none;
+  border-top: 1px solid #161414;
+  width: 20px;
+  margin: 5px;
+}
+
+#our-specialist button {
   color: #272a31;
   background-color: #fff;
   border: 1px solid #a5a09f;
@@ -181,14 +205,14 @@ button {
   border-radius: 5px;
 }
 
-.our-specialist button i {
+#our-specialist button i {
   color: #ec5242;
 }
 
 /* Ends */
 
 /* Partners section starts */
-.Partners-section {
+#Partners-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,17 +220,10 @@ button {
   color: #d3d3d3;
 }
 
-.Partners-section h3 {
+#Partners-section h3 {
   margin: 30px 0 0 0;
   color: #d3d3d3;
   font-family: "Lato", sans-serif;
-}
-
-.Partners-section hr {
-  border: none;
-  border-top: 1px solid #ec5242;
-  width: 50px;
-  margin: 10px;
 }
 
 footer img {
@@ -220,7 +237,7 @@ ul > li > img {
   padding: 15px;
 }
 
-.Partners-section ul {
+#Partners-section ul {
   list-style-type: none;
   gap: 10px;
   margin-top: 10px;
@@ -234,9 +251,11 @@ footer {
   background: #e7e6e6;
 }
 
-.copyright {
+#copyright {
   display: flex;
   align-items: center;
   padding: 30px;
   gap: 30px;
 }
+
+/* Ends */

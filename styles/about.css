@@ -16,9 +16,7 @@ p {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   font-family: "COCOGOOSE", Georgia, serif;
 }
 
@@ -30,17 +28,27 @@ a {
   cursor: pointer;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ec5242;
+  width: 50px;
+  margin: 10px;
+}
+
+/* Header and top section starts */
 #heading {
+  text-align: center;
   height: 100vh;
-  padding: 90px 10px;
+  padding: 80px 10px;
 }
 
 #heading::after {
   content: "";
-  background-image: url("./images/about-background7480127.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../images/about-background7480127.jpg");
+  background-repeat: repeat;
   background-position: center;
   background-size: cover;
+  height: 100%;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -61,3 +69,122 @@ a {
   font-size: 30px;
   position: fixed;
 }
+
+.first-header p {
+  color: #bb3e30;
+  font-size: 18px;
+}
+
+.first-header h1 {
+  color: #db4e3fe3;
+  font-size: 32px;
+  font-family: "cocogoose", serif;
+}
+
+p.description {
+  border: 2px solid #fff;
+  padding: 5px 5px 5px 10px;
+  margin-top: 20px;
+  font-size: 15px;
+  background: rgb(233, 230, 230);
+}
+
+.email-address {
+  margin-top: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Ends */
+
+/* Company logo decision starts */
+#main-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#main-logo h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+#main-logo p {
+  text-align: center;
+  padding: 0 20px 0 20px;
+  font-size: 15px;
+}
+
+.company-logo {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 2px 5px 0 #524c4c73;
+  margin: 40px 15px 40px 15px;
+  padding: 20px 25px 20px 40px;
+  gap: 10px;
+}
+
+footer img {
+  width: 60px;
+  height: 40px;
+}
+
+.company-logo img {
+  width: 80px;
+  height: 60px;
+}
+
+/* Company logo decision Ends */
+
+/* client review section starts */
+#client-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 40px 0 #e65f5f73;
+  padding: 30px;
+}
+
+#client-reviews h3 {
+  text-align: center;
+  font-size: 20px;
+  padding: 0 5px 0 10px;
+}
+
+#client-reviews p {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 30px;
+}
+
+.client-1 {
+  background-image: url(../images/client-7.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 230px;
+}
+
+.client-2 {
+  background-image: url(../images/client-review3.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 230px;
+}
+
+/* client review section Ends */
+
+/* footer section */
+footer {
+  background: #272a31;
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  color: #fff;
+}
+
+/* Footer Ends */
