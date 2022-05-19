@@ -73,6 +73,7 @@ header {
   left: 20px;
   font-size: 30px;
   position: fixed;
+  z-index: 1;
 }
 
 .first-header p {
@@ -174,10 +175,46 @@ button {
 }
 
 .specialist-container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 30%;
-  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.specialist-image {
+  background-image: url("../images/flower-logo1.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 80px;
+  width: 120px;
+  height: 130px;
+  position: relative;
+}
+
+/* linter changes from footer */
+footer img {
+  width: 60px;
+  height: 40px;
+}
+
+/* linter changes from partners section */
+ul > li > img {
+  width: 120px;
+  height: 70px;
+  padding: 15px;
+}
+
+.specialist-image img {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  bottom: 0;
+  right: 0;
+}
+
+.doctor-bio {
+  width: 200px;
 }
 
 .specialist-container p {
@@ -224,17 +261,6 @@ button {
   margin: 30px 0 0 0;
   color: #d3d3d3;
   font-family: "Lato", sans-serif;
-}
-
-footer img {
-  width: 60px;
-  height: 40px;
-}
-
-ul > li > img {
-  width: 120px;
-  height: 70px;
-  padding: 15px;
 }
 
 #Partners-section ul {
