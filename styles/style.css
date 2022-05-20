@@ -5,25 +5,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
   color: #272a31;
 }
 
-p {
+p,
+h3,
+h4,
+h5 {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "COCOGOOSE", Georgia, serif;
 }
 
 a {
   cursor: pointer;
+  font-family: "Lato", sans-serif;
 }
 
 hr {
@@ -35,12 +40,17 @@ hr {
 
 /* header section starts */
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #cabfbee7;
   padding: 30px;
   box-shadow: 0 3px 10px 0 #4b4b4b73;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 
 #heading {
@@ -159,7 +169,7 @@ button {
   cursor: pointer;
 }
 
-/* Ends */
+/* Our services section Ends */
 
 /* Meet our specialist section */
 #our-specialist {
@@ -183,7 +193,7 @@ button {
 }
 
 .specialist-image {
-  background-image: url("../images/flower-logo1.jpg");
+  background-image: url("../images/clientbg7.jpg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 80px;
@@ -198,17 +208,10 @@ footer img {
   height: 40px;
 }
 
-/* linter changes from partners section */
-ul > li > img {
-  width: 120px;
-  height: 70px;
-  padding: 15px;
-}
-
 .specialist-image img {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 115px;
+  width: 104px;
   bottom: 0;
   right: 0;
 }
@@ -225,7 +228,7 @@ ul > li > img {
   color: #ec5242;
 }
 
-#our-specialist > div > div > hr {
+#our-specialist > div > div:nth-child(1) > div.doctor-bio > hr {
   border: none;
   border-top: 1px solid #161414;
   width: 20px;
@@ -246,35 +249,11 @@ ul > li > img {
   color: #ec5242;
 }
 
-/* Ends */
-
-/* Partners section starts */
-#Partners-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #272a31;
-  color: #d3d3d3;
-}
-
-#Partners-section h3 {
-  margin: 30px 0 0 0;
-  color: #d3d3d3;
-  font-family: "Lato", sans-serif;
-}
-
-#Partners-section ul {
-  list-style-type: none;
-  gap: 10px;
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 30% 30%;
-}
+/* Our specialist section Ends */
 
 /* footer section */
 footer {
-  background: #e7e6e6;
+  background: #272a31;
 }
 
 #copyright {
@@ -282,6 +261,288 @@ footer {
   align-items: center;
   padding: 30px;
   gap: 30px;
+  color: #fff;
 }
 
-/* Ends */
+/* Footer section Ends */
+
+/* All content set as hidden */
+.nav-info {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+button .nav-button {
+  display: none;
+}
+
+#Partners-section {
+  display: none;
+}
+
+/* #services-link > a {
+  display: none;
+} */
+
+/* DESKTOP VERSION OF THE PROJECT STARTS */
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cabfbee7;
+    padding: 0;
+    box-shadow: 0 3px 10px 0 #4b4b4b73;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  .heading-background {
+    display: none;
+  }
+
+  .nav-info {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    background: #646568;
+  }
+
+  .nav-info ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 5px;
+    margin-right: 100px;
+  }
+
+  .nav-info ul li a {
+    color: #fff;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+  }
+
+  /* linter changes on footer image */
+  footer img {
+    width: 50px;
+    height: 40px;
+  }
+
+  /* linter changes on partners image */
+  ul > li > img {
+    width: 120px;
+    height: 70px;
+    padding: 15px;
+  }
+
+  .nav-menu img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+  }
+
+  /* Linter changes on serves ul */
+  .services ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-menu nav button.btn {
+    padding: 10px 10px;
+    width: 150px;
+    margin: 0;
+    background: #fff;
+    color: #ec5242;
+    border: 2px solid #ec5242;
+  }
+
+  /* Desktop headline section */
+  #heading {
+    padding-left: 40px;
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .first-header p {
+    font-size: 25px;
+    color: #bb2f1fef;
+  }
+
+  .first-header h1 {
+    font-size: 50px;
+    color: #bb2f1fef;
+    font-family: "cocogoose", serif;
+  }
+
+  p.description {
+    border: 2px solid #fff;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.452);
+    padding: 5px 5px 5px 10px;
+    margin-top: 10px;
+  }
+
+  header .date-address h2 {
+    font-size: 30px;
+  }
+
+  /* Desktop - our services section */
+
+  .services ul > li {
+    border: 1px solid #333336;
+    background-color: #9e9c9c50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* width: 150px; stlyed in min-width 1024px */
+    gap: 5px;
+    padding: 10px 5px 10px 5px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .services ul > li p {
+    font-size: 10px;
+  }
+
+  #services-id > button {
+    display: none;
+  }
+
+  #services-id > a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 5px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .services h3 {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+  }
+
+  /* Desktop - our specialist section */
+  .specialist-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1024px;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .specialist-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    width: 340px;
+  }
+
+  #our-specialist > div > div > hr {
+    border: none;
+    border-top: 1px solid #161414;
+    width: 20px;
+    margin: 5px;
+  }
+
+  #our-specialist button {
+    display: none;
+  }
+
+  /* Desktop - Our Partners section */
+  #Partners-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #272a31;
+    color: #d3d3d3;
+  }
+
+  #Partners-section h3 {
+    margin: 30px 0 0 0;
+    color: #d3d3d3;
+    font-family: "Lato", sans-serif;
+  }
+
+  #Partners-section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* Desktop - footer section */
+  footer {
+    background: #e7e6e6;
+  }
+
+  #copyright {
+    display: flex;
+    justify-content: center;
+    color: #272a31;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 250px 0 80px;
+  }
+
+  .first-header p {
+    font-size: 30px;
+  }
+
+  .first-header h1 {
+    font-size: 60px;
+  }
+
+  p.description {
+    font-size: 18px;
+    padding: 5px 5px 5px 10px;
+    width: 850px;
+  }
+
+  header .date-address h2 {
+    font-size: 35px;
+  }
+
+  .services ul > li {
+    width: 150px;
+  }
+}

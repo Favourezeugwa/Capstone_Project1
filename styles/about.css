@@ -5,18 +5,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
   color: #272a31;
 }
 
-p {
+p,
+h3,
+h4,
+h5 {
   font-family: "Lato", sans-serif;
   line-height: 1.5;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "COCOGOOSE", Georgia, serif;
 }
 
@@ -26,6 +32,7 @@ button {
 
 a {
   cursor: pointer;
+  font-family: "Lato", sans-serif;
 }
 
 hr {
@@ -122,13 +129,21 @@ p.description {
   flex-direction: row;
   box-shadow: 0 2px 5px 0 #524c4c73;
   margin: 40px 15px 40px 15px;
-  padding: 20px 25px 20px 40px;
-  gap: 10px;
+  padding: 20px 18px 20px 20px;
+  gap: 20px;
 }
 
+/* Linter changes on footer image */
 footer img {
   width: 60px;
   height: 40px;
+}
+
+/* Linter changes on partners image */
+ul > li > img {
+  width: 120px;
+  height: 70px;
+  padding: 15px;
 }
 
 .company-logo img {
@@ -191,9 +206,35 @@ footer img {
 
 /* client review section Ends */
 
+/* Partners section starts */
+#Partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #272a31;
+  color: #d3d3d3;
+}
+
+#Partners-section h3 {
+  margin: 30px 0 0 0;
+  color: #d3d3d3;
+  font-family: "Lato", sans-serif;
+}
+
+#Partners-section ul {
+  list-style-type: none;
+  gap: 10px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30%;
+}
+
+/* Partners section ends */
+
 /* footer section */
 footer {
-  background: #272a31;
+  background: #e7e6e6;
 }
 
 #copyright {
@@ -201,7 +242,227 @@ footer {
   align-items: center;
   padding: 30px;
   gap: 30px;
-  color: #fff;
 }
 
 /* Footer Ends */
+
+.nav-info {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+button .nav-button {
+  display: none;
+}
+
+/* DESKTOP VERSION OF THE PROJECT STARTS */
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cabfbee7;
+    padding: 0;
+    box-shadow: 0 3px 10px 0 #4b4b4b73;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  #Partners-section {
+    display: none;
+  }
+
+  .heading-background {
+    display: none;
+  }
+
+  .nav-info {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    background: #646568;
+  }
+
+  .nav-info ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 5px;
+    margin-right: 100px;
+  }
+
+  .nav-info ul li a {
+    color: #fff;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+  }
+
+  .nav-menu img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .nav-menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-menu nav button.btn {
+    padding: 10px 10px;
+    width: 150px;
+    margin: 0;
+    background: #fff;
+    color: #ec5242;
+    border: 2px solid #ec5242;
+  }
+
+  /* heading section */
+  #heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 10px 50px 10px;
+  }
+
+  .first-header p {
+    display: none;
+  }
+
+  .first-header h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 42px;
+    font-family: "cocogoose", serif;
+    color: #bb2f1fef;
+  }
+
+  p.description {
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 5px 5px 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    background: rgba(233, 230, 230, 0.911);
+    width: 500px;
+  }
+
+  .email-address {
+    text-align: center;
+    margin: 5px;
+    font-size: 14px;
+    width: 450px;
+  }
+
+  /* headline section ends */
+
+  /* company logo starts */
+  #main-logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #main-logo h3 {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .company-logo {
+    margin-top: 30px;
+    padding: 20px 0 20px 10px;
+    width: 350px;
+  }
+
+  /* company logo ends */
+
+  /* client-reviews start */
+  #client-reviews {
+    padding: 30px 90px 60px 90px;
+    box-shadow: 0 0 5px 0 #e65f5f73;
+  }
+
+  .client-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .client-img {
+    max-height: 500px;
+    max-width: 300px;
+    position: relative;
+  }
+
+  /* client review ends */
+
+  /* footer starts */
+  footer {
+    background: #272a31;
+  }
+
+  #copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 10px 50px 10px;
+  }
+
+  .first-header h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+  }
+
+  p.description {
+    text-align: center;
+    padding: 15px 5px 5px 10px;
+    margin: 30px;
+    width: 600px;
+    height: 150px;
+  }
+
+  .email-address {
+    text-align: center;
+    width: 450px;
+  }
+
+  /* client-reviews start */
+  #client-reviews {
+    padding: 40px 200px 90px 200px;
+  }
+}
