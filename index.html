@@ -17,11 +17,50 @@
 <body>
     <header>
         <div class="heading-background">
+            <!-- mobile menu nav section -->
             <nav id="nav-section">
                 <i class="fa-solid fa-bars" id="menu"></i>
+                <i class="fa-solid fa-xmark" id="menu-close"></i>
+                <nav class="menu-list">
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="#services-id">Services</a></li>
+                        <li><a href="#butt">Join</a></li>
+                        <li><a href="#our-specialist">Specialist</a></li>
+                        <li><a href="#Partners-section">Partners</a></li>
+                    </ul>
+                    <button type="button" class="btn">Healthy skin</button>
+                </nav>
+            </nav>
+        </div>
+        <!-- Desktop top navigation starts here -->
+        <!-- first part -->
+        <div class="nav-info">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">My Page</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <!-- second part -->
+        <div class="nav-menu">
+            <img src="./images/flower-logo1.jpg" alt="Company Logo">
+            <nav class="menu-list">
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#services-id">Services</a></li>
+                    <li><a href="#butt">Join</a></li>
+                    <li><a href="#our-specialist">Specialist</a></li>
+                    <li><a href="#Partners-section">Partners</a></li>
+                </ul>
+                <button type="button" class="btn">Healthy skin</button>
             </nav>
         </div>
     </header>
+
+    <!-- The heading/home section -->
     <section id="heading">
         <div class="first-header">
             <p>"Welcome to our brand opening"</p>
@@ -36,6 +75,7 @@
             <p class="address">@ Eko hotel and suites, victoria Island,Lagos.</p>
         </div>
     </section>
+
     <!-- Our services section -->
     <section class="services" id="services-id">
         <h3>Our services</h3>
@@ -67,23 +107,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor magnam necessitatibus!</p>
             </li>
         </ul>
-        <button type="button">Book an appointment today!</button>
-        <!-- <a href="">Meet with a specialist</a> -->
+        <button type="button" id="butt">Book an appointment today!</button>
+        <a href="#" class="service-link">BOOK AN APPOINTMENT!</a>
     </section>
 
     <!-- our specialist section -->
-    <section class="our-specialist">
+    <section id="our-specialist">
         <h3>Meet our Specialist</h3>
         <hr>
-        <div class="specialist-container">
-            <img src="#" alt="Dr Hayley Clinton" class="featured-img">
-            <div class="doctor-bio">
-                <h4 class="name">Dr Hayley Clinton</h4>
-                <p class="role"><i>Senior dermatologist and cosmotologist</i></p>
-                <hr>
-                <p class="achievements">Expert having research knowledge at 10+ years of experience in the field of
-                    Dermatology with most relevant qualifications, expertise and research</p>
-            </div>
+        <div id="specialist-wrapper">
         </div>
         <button type="button" class="more">More
             <i class="fa-solid fa-angle-down"></i>
@@ -91,7 +123,7 @@
     </section>
 
     <!-- Our Partners section -->
-    <section class="Partners-section">
+    <section id="Partners-section">
         <h3>Partners</h3>
         <hr>
         <ul>
@@ -105,10 +137,11 @@
     </section>
 
     <!-- Footer section -->
-    <footer class="copyright">
+    <footer id="copyright">
         <img src="./images/flower-logo1.jpg" alt="company-logo">
-        <p>© 2022 Dermatology and skincare medical clinic.</p>
+        <p>© 2022 Dermatology and skincare medical clinic.<br> Some rights reserved.</p>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
