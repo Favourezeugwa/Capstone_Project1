@@ -187,28 +187,37 @@ ul > li > img {
   gap: 10px;
 }
 
-.client-img {
-  max-height: 230px;
-  position: relative;
-}
-
-.client-img img {
-  width: 100%;
-  height: 100%;
-}
-
 .client-card {
+  min-width: 250px;
+  min-height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  background: #996c67c7;
-  top: 0;
-  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
   color: #fff;
-  gap: 10px;
-  padding: 0 10px;
+}
+
+#card-1 {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(236, 82, 66, 0.8) 20%,
+      rgba(236, 82, 66, 0.8) 70%
+    ),
+    url("../images/client-7.jpg");
+}
+
+#card-2 {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(236, 82, 66, 0.8) 20%,
+      rgba(236, 82, 66, 0.8) 70%
+    ),
+    url("../images/client-review3.webp");
 }
 
 /* client review section Ends */
@@ -416,10 +425,9 @@ button .nav-button {
     gap: 10px;
   }
 
-  .client-img {
-    max-height: 500px;
-    max-width: 300px;
-    position: relative;
+  .client-card {
+    width: 320px;
+    height: 250px;
   }
 
   /* client review ends */
@@ -471,5 +479,10 @@ button .nav-button {
   /* client-reviews start */
   #client-reviews {
     padding: 40px 200px 90px 200px;
+  }
+
+  .client-card {
+    width: 420px;
+    height: 320px;
   }
 }
