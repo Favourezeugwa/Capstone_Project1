@@ -267,7 +267,7 @@ footer img {
   color: #ec5242;
 }
 
-#our-specialist > div > div:nth-child(1) > div.doctor-bio > hr {
+#our-specialist > div > div > div.doctor-bio > hr {
   border: none;
   border-top: 1px solid #161414;
   width: 20px;
