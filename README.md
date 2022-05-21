@@ -12,7 +12,7 @@ Click this [link](https://favourezeugwa.github.io/Capstone_Project1/) to view li
 
 ## Loom video
 
-Lik to [loom](https://www.loom.com/share/ec2ed91811e44c0cbcb9ba0652858c55)video.
+Link to [loom](https://www.loom.com/share/ec2ed91811e44c0cbcb9ba0652858c55) video.
 
 ## Built With
 
