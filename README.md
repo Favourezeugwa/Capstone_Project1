@@ -2,10 +2,11 @@
 
 # HTML/CSS & JavaScript capstone project.
 
-
+This is my first capstone project about a dermatological and skin care medical clinic. It is an attempt to implement a front end `home` and `about` page of an already designed template.
 
 ## Live Demo
 
+Click this [link](https://favourezeugwa.github.io/Capstone_Project1/) to view live demo.
 
 > HTML/CSS & JavaScript capstone project.
 
@@ -15,17 +16,18 @@
 - CSS
 - javascript
 
-
 ## Original Design by
+
 👤 **Cindy Shin**
+
 - Behance: [@adgio07](https://www.behance.net/adagio07)
 
 ## Author
+
 👤 **Favour Amarachi Ezeugwa**
 
 - GitHub: [@Favourezeugwa](https://github.com/Favourezeugwa)
 - LinkedIn: [Favour Amarachi Ezeugwa](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
-
 
 ## 🤝 Contributing
 
