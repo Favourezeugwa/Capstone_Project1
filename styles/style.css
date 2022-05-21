@@ -29,6 +29,12 @@ h2 {
 a {
   cursor: pointer;
   font-family: "Lato", sans-serif;
+  color: #161414;
+}
+
+a:hover,
+a:focus {
+  color: #ec5242;
 }
 
 hr {
@@ -85,6 +91,48 @@ header {
   position: fixed;
   z-index: 1;
 }
+
+/* mobile menu */
+nav .menu-list {
+  display: none;
+}
+
+.mobile-open .menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 520px;
+}
+
+/* linter changes from our services section */
+.services ul > li {
+  border: 1px solid #333336;
+  background-color: #9e9c9c50;
+  display: grid;
+  grid-template-columns: 15% 25% 60%;
+  padding: 20px 0 10px 10px;
+  align-items: center;
+}
+
+#nav-section > nav > ul > li {
+  margin: 30px;
+  font-size: 25px;
+  color: #161414;
+}
+
+#menu-close {
+  display: none;
+}
+
+.mobile-open #menu-close {
+  display: block;
+  z-index: 3;
+  position: absolute;
+  font-size: 35px;
+}
+
+/* Ends */
 
 .first-header p {
   color: #ec5242;
@@ -147,15 +195,6 @@ header .date-address h2 {
   margin: 20px 10px 0 10px;
   list-style-type: none;
   font-size: 30px;
-}
-
-.services ul > li {
-  border: 1px solid #333336;
-  background-color: #9e9c9c50;
-  display: grid;
-  grid-template-columns: 15% 25% 60%;
-  padding: 20px 0 10px 10px;
-  align-items: center;
 }
 
 button {
@@ -283,9 +322,9 @@ button .nav-button {
   display: none;
 }
 
-/* #services-link > a {
+#services-id > a {
   display: none;
-} */
+}
 
 /* DESKTOP VERSION OF THE PROJECT STARTS */
 @media only screen and (min-width: 768px) {
@@ -401,7 +440,8 @@ button .nav-button {
   p.description {
     border: 2px solid #fff;
     font-size: 16px;
-    background: rgba(255, 255, 255, 0.452);
+
+    /* background: rgba(255, 255, 255, 0.452); */
     padding: 5px 5px 5px 10px;
     margin-top: 10px;
   }
@@ -435,6 +475,7 @@ button .nav-button {
   }
 
   #services-id > a {
+    display: block;
     color: #fff;
     text-decoration: underline;
     font-size: 12px;
@@ -450,7 +491,7 @@ button .nav-button {
   }
 
   /* Desktop - our specialist section */
-  .specialist-wrapper {
+  #specialist-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -470,7 +511,7 @@ button .nav-button {
     width: 340px;
   }
 
-  #our-specialist > div > div > hr {
+  #specialist-wrapper > div > div.doctor-bio > hr {
     border: none;
     border-top: 1px solid #161414;
     width: 20px;

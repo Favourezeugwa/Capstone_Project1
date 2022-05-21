@@ -17,8 +17,20 @@
 <body>
     <header>
         <div class="heading-background">
+            <!-- mobile menu nav section -->
             <nav id="nav-section">
                 <i class="fa-solid fa-bars" id="menu"></i>
+                <i class="fa-solid fa-xmark" id="menu-close"></i>
+                <nav class="menu-list">
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Specialist</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                    <button type="button" class="btn">Healthy skin</button>
+                </nav>
             </nav>
         </div>
         <!-- Desktop top navigation starts here -->
@@ -35,13 +47,13 @@
         <!-- second part -->
         <div class="nav-menu">
             <img src="./images/flower-logo1.jpg" alt="Company Logo">
-            <nav>
+            <nav class="menu-list">
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Join</a></li>
-                    <li><a href="">Specialist</a></li>
-                    <li><a href="">Partners</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Specialist</a></li>
+                    <li><a href="#">Partners</a></li>
                 </ul>
                 <button type="button" class="btn">Healthy skin</button>
             </nav>
@@ -103,79 +115,7 @@
     <section id="our-specialist">
         <h3>Meet our Specialist</h3>
         <hr>
-        <div class="specialist-wrapper">
-            <div class="specialist-container">
-                <div class="specialist-image">
-                    <img src="./images/specialist-1.jpg" alt="Dr Hayley Clinton" class="featured-img">
-                </div>
-                <div class="doctor-bio">
-                    <h4 class="name">Dr Hayley Clinton</h4>
-                    <p class="role"><i>Senior dermatologist and cosmotologist</i></p>
-                    <hr>
-                    <p class="achievements">Expert having research knowledge at 10+ years of experience in the field of
-                        Dermatology with most relevant qualifications, expertise and research</p>
-                </div>
-            </div>
-            <div class="specialist-container">
-                <div class="specialist-image">
-                    <img src="./images/specialist-2.jpg" alt="Dr Hayley Clinton" class="featured-img">
-                </div>
-                <div class="doctor-bio">
-                    <h4 class="name">Dr Samantha Varghese</h4>
-                    <p class="role"><i>Senior dermatologist and cosmotologist</i></p>
-                    <hr>
-                    <p class="achievements">Expert having research knowledge at 10+ years of experience in the field of
-                        Dermatology with most relevant qualifications, expertise and research</p>
-                </div>
-            </div>
-            <div class="specialist-container">
-                <div class="specialist-image">
-                    <img src="./images/specialist-3.jpg" alt="Dr Hayley Clinton" class="featured-img">
-                </div>
-                <div class="doctor-bio">
-                    <h4 class="name">Dr knight George</h4>
-                    <p class="role"><i>Senior dermatologist and cosmotologist</i></p>
-                    <hr>
-                    <p class="achievements">Expert having research knowledge at 10+ years of experience in the field of
-                        Dermatology with most relevant qualifications, expertise and research</p>
-                </div>
-            </div>
-            <div class="specialist-container">
-                <div class="specialist-image">
-                    <img src="./images/specialist-4.jpg" alt="Dr Hayley Clinton" class="featured-img">
-                </div>
-                <div class="doctor-bio">
-                    <h4 class="name">Dr Gladys Pirple</h4>
-                    <p class="role"><i>Senior dermatologist and cosmotologist</i></p>
-                    <hr>
-                    <p class="achievements">Expert having research knowledge at 10+ years of experience in the field of
-                        Dermatology with most relevant qualifications, expertise and research</p>
-                </div>
-            </div>
-            <div class="specialist-container">
-                <div class="specialist-image">
-                    <img src="./images/specialist-5.jpg" alt="Dr Hayley Clinton" class="featured-img">
-                </div>
-                <div class="doctor-bio">
-                    <h4 class="name">Dr Hillary Obi</h4>
-                    <p class="role"><i>Senior dermatologist and cosmotologist</i></p>
-                    <hr>
-                    <p class="achievements">Expert having research knowledge at 10+ years of experience in the field of
-                        Dermatology with most relevant qualifications, expertise and research</p>
-                </div>
-            </div>
-            <div class="specialist-container">
-                <div class="specialist-image">
-                    <img src="./images/specialist-6.jpg" alt="Dr Hayley Clinton" class="featured-img">
-                </div>
-                <div class="doctor-bio">
-                    <h4 class="name">Dr Kimberly Phillips</h4>
-                    <p class="role"><i>Senior dermatologist and cosmotologist</i></p>
-                    <hr>
-                    <p class="achievements">Expert having research knowledge at 10+ years of experience in the field of
-                        Dermatology with most relevant qualifications, expertise and research</p>
-                </div>
-            </div>
+        <div id="specialist-wrapper">
         </div>
         <button type="button" class="more">More
             <i class="fa-solid fa-angle-down"></i>
@@ -201,6 +141,7 @@
         <img src="./images/flower-logo1.jpg" alt="company-logo">
         <p>© 2022 Dermatology and skincare medical clinic.<br> Some rights reserved.</p>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

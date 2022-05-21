@@ -103,6 +103,12 @@ p.description {
   margin-bottom: 20px;
 }
 
+.email-address a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* Ends */
 
 /* Company logo decision starts */
@@ -135,7 +141,7 @@ p.description {
 
 /* Linter changes on footer image */
 footer img {
-  width: 60px;
+  width: 50px;
   height: 40px;
 }
 
