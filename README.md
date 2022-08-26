@@ -6,11 +6,11 @@ This is my first capstone project about a dermatological and skin care medical c
 
 ## Live Demo
 
-[Click this link](https://favourezeugwa.github.io/Capstone_Project1/) to view live demo.
+[Live demo link](https://favourezeugwa.github.io/Capstone_Project1/)
 
 ## Loom video
 
-Link to [loom](https://www.loom.com/share/ec2ed91811e44c0cbcb9ba0652858c55) video.
+[Link to loom](https://www.loom.com/share/ec2ed91811e44c0cbcb9ba0652858c55)
 
 ## Built With
 
